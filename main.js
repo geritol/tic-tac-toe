@@ -111,8 +111,8 @@ function checkIfWon(board, secondRun){
     }
     //console.log(res)
     if(check(res)) return true
-    if(!secondRun) return checkIfWon(transpose(board), true)
   }
+  if(!secondRun) return checkIfWon(transpose(board), true)
   return false
 }
 
